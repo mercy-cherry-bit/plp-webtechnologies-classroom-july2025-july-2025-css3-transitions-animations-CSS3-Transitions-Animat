@@ -1,0 +1,31 @@
+/* Button Hover */
+.button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2ecc71;
+  transform: scale(1.1);
+}
+
+/* Keyframe Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  animation: slideIn 1s ease-out;
+}
